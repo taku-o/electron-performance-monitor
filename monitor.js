@@ -9,7 +9,7 @@ var lenName = 20;
 function format(category, name) {
     var t = process.hrtime(initial);
     var t0 = ('00' + t[0]).slice(-8);
-    var t1 = ('000000000' + t[1]).slice(-8);
+    var t1 = ('000000000' + t[1]).slice(-9);
     return "[time][" + pad(processType, lenType) + "][" + pad(category, lenCategory) + "] " + pad(name, lenName) + ": " + t0 + "," + t1;
 }
 exports.format = format;
