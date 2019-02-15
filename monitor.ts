@@ -4,7 +4,7 @@ const processType = process.type; // browser or renderer
 
 // length
 const lenType = 8;
-const lenCategory = 8;
+const lenCategory = 9;
 const lenName = 20;
 
 export function format(category: string, name: string): string {

@@ -4,7 +4,7 @@ var initial = process.hrtime();
 var processType = process.type; // browser or renderer
 // length
 var lenType = 8;
-var lenCategory = 8;
+var lenCategory = 9;
 var lenName = 20;
 function format(category, name) {
     var t = process.hrtime(initial);
