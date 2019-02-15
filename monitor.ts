@@ -2,13 +2,16 @@
 const initial = process.hrtime();
 const processType = process.type; // browser or renderer
 
+// length
 const lenType = 8;
-const lenCategory = 12;
+const lenCategory = 8;
 const lenName = 20;
 
 export function format(category: string, name: string): string {
   const t = process.hrtime(initial);
-  return `[time][${pad(processType, lenType)}][${pad(category, lenCategory)}] ${pad(name, lenName)}: ${t[0]},${t[1]}`;
+  const t0 = ('00' + t[0]).slice(-8);
+  const t1 = ('000000000' + t[1]).slice(-8);
+  return `[time][${pad(processType, lenType)}][${pad(category, lenCategory)}] ${pad(name, lenName)}: ${t0},${t1}`;
 }
 
 function pad(text: string, len: number): string {
