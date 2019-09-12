@@ -1,6 +1,6 @@
 {
-  "name": "electron-performance-monitor",
-  "version": "0.2.0",
+  "name": "@taku-o/electron-performance-monitor",
+  "version": "0.2.1",
   "description": "Electron performance monitoring tool.",
   "main": "monitor.js",
   "types": "types.d.ts",
@@ -11,7 +11,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:taku-o/electron-performance-monitor.git"
+    "url": "git://github.com/taku-o/electron-performance-monitor.git"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "keywords": [
     "electron",
