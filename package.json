@@ -1,6 +1,6 @@
 {
-  "name": "@taku-o/electron-performance-monitor",
-  "version": "0.2.1",
+  "name": "electron-performance-monitor",
+  "version": "0.2.2",
   "description": "Electron performance monitoring tool.",
   "main": "monitor.js",
   "types": "types.d.ts",
